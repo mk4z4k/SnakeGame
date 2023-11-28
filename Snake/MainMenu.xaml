@@ -1,0 +1,15 @@
+﻿<Window x:Class="Snake.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Snake"
+        mc:Ignorable="d"
+        Icon="Resources\snake.png"
+        Title="Главное меню" Height="300" Width="300" ResizeMode="NoResize" Closing="Window_Closing">
+    <Grid>
+        <Button x:Name="button" Content="Начать игру" Margin="62,59,62,173" Click="button_Click"/>
+        <Button x:Name="button1" Content="Настройки" Margin="62,154,62,78" Click="button1_Click"/>
+
+    </Grid>
+</Window>

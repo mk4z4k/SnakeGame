@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net7.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+        <ApplicationIcon>Resources\snakeico.ico</ApplicationIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\settings.png" />
+      <None Remove="Resources\snake.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="Resources\snakeico.ico" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="Resources\settings.png" />
+      <Resource Include="Resources\snake.png" />
+    </ItemGroup>
+
+</Project>

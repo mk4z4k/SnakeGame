@@ -1,0 +1,20 @@
+﻿<Window x:Class="Snake.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Snake"
+        mc:Ignorable="d"
+        Icon="Resources\settings.png"
+        Title="Настройки" Height="224" Width="391" ResizeMode="NoResize" Closing="Window_Closing">
+    <Grid >
+        <Button x:Name="button" Content="Сохранить" Margin="94,148,108,10" Click="button_Click" Focusable="True" IsDefault="True"/>
+        <RadioButton x:Name="radioButton" Content="Простой" Margin="27,58,277,104" Checked="radioButton_Checked" />
+        <RadioButton x:Name="radioButton1" Content="Средний" Margin="147,58,130,104" IsChecked="True" Checked="radioButton1_Checked"/>
+        <RadioButton x:Name="radioButton2" Content="Сложный" Margin="286,58,18,109" Checked="radioButton2_Checked"/>
+        <Label x:Name="label" Content="Выберете уровень сложности" Margin="94,10,61,143" />
+        <CheckBox x:Name="checkBox" Content="Экран без границ" Margin="35,104,139,65" Checked="checkBox_Checked" Unchecked="checkBox_Unchecked" />
+        <CheckBox x:Name="checkBox1" Content="Уменьшение змейки" Margin="189,104,44,65" IsEnabled ="false"/>
+
+    </Grid>
+</Window>

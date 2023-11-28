@@ -1,0 +1,11 @@
+﻿<Window x:Class="Snake.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Snake"
+        mc:Ignorable="d"
+        Icon="Resources\snake.png"
+        Title="Змейка v2.0" Height="400" Width="400" ResizeMode="NoResize" KeyDown="Window_KeyDown" Closing="Window_Closing">
+    <Canvas x:Name="CanvasMap" Loaded="CanvasMap_Loaded" Background="{DynamicResource {x:Static SystemColors.InfoBrushKey}}"/>
+</Window>
